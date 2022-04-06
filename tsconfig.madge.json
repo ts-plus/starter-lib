@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "allowJs": true,
+        "baseUrl": ".",
+        "paths": {
+            "@org/starter-lib": [
+                "./packages/starter-lib/build/esm/index.js"
+            ],
+            "@org/starter-lib/test/*": [
+                "./packages/starter-lib/build/test/*"
+            ],
+            "@org/starter-lib/examples/*": [
+                "./packages/starter-lib/build/examples/*"
+            ],
+            "@org/starter-lib/*": [
+                "./packages/starter-lib/build/esm/*"
+            ],
+        }
+    },
+    "include": [
+        "./packages/starter-lib/build/esm/**/*.js",
+        "./packages/starter-lib/build/test/**/*.js",
+        "./packages/starter-lib/build/examples/**/*.js"
+    ]
+}
