@@ -1,18 +1,17 @@
-import type { Person } from "@org/starter-lib"
-import { guardPerson } from "@org/starter-lib"
+import { Age, Name, Person } from "@org/starter-lib"
 
 const person: Person = {
-  firstName: "Michael",
-  lastName: "Arnaldi"
+  name: Name.make("Michael"),
+  age: Maybe.some(Age.unsafeMake(30))
 }
 
 const notPerson = {
   firstName: "Michael"
 }
 
-if (guardPerson.is(person)) {
+if (Person.is(person)) {
   console.log("Object ", JSON.stringify(person), " is of type Person")
 }
-if (!guardPerson.is(notPerson)) {
+if (!Person.is(notPerson)) {
   console.log("Object ", JSON.stringify(notPerson), " is not of type Person")
 }

@@ -1,6 +1,11 @@
-export interface Person {
-  readonly firstName: string
-  readonly lastName: string
-}
+export type Age = Positive & Int & Finite & Brand<"Age">
+export const Age = Derive<Make<Age>>()
 
-export const guardPerson: Guard<Person> = Derive()
+export type Name = string & Brand<"Name">
+export const Name = Derive<Make<Name>>()
+
+export interface Person {
+  readonly name: Name
+  readonly age: Maybe<Age>
+}
+export const Person = Derive<Codec<Person>>()
