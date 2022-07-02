@@ -1,21 +1,16 @@
 {
-    "extends": "../../tsconfig.base.json",
-    "compilerOptions": {
-        "outDir": "build/examples",
-        "declarationDir": "build/examples",
-        "tsBuildInfoFile": "build/tsbuildinfo/examples.tsbuildinfo",
-        "tsPlusConfig": "../../tsplus.config.json",
-        "rootDir": "_examples"
-    },
-    "include": [
-        "_examples/**/*.ts"
-    ],
-    "references": [
-        {
-            "path": "./tsconfig.build.json"
-        }
-    ],
-    "files": [
-        "./tsplus.prelude.d.ts"
-    ]
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "build/examples",
+    "declarationDir": "build/examples",
+    "tsBuildInfoFile": "build/tsbuildinfo/examples.tsbuildinfo",
+    "tsPlusConfig": "../../tsplus.config.json",
+    "rootDir": "_examples"
+  },
+  "include": ["_examples/**/*.ts"],
+  "references": [
+    {
+      "path": "./tsconfig.build.json"
+    }
+  ]
 }

@@ -1,22 +1,16 @@
 {
-    "extends": "../../tsconfig.base.json",
-    "compilerOptions": {
-        "outDir": "build/test",
-        "declarationDir": "build/test",
-        "tsBuildInfoFile": "build/tsbuildinfo/test.tsbuildinfo",
-        "tsPlusConfig": "../../tsplus.config.json",
-        "rootDir": "_test"
-    },
-    "include": [
-        "_test/**/*.ts"
-    ],
-    "references": [
-        {
-            "path": "./tsconfig.build.json"
-        }
-    ],
-    "files": [
-        "./tsplus.prelude.d.ts",
-        "../../tsplus.prelude.test.d.ts",
-    ]
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "build/test",
+    "declarationDir": "build/test",
+    "tsBuildInfoFile": "build/tsbuildinfo/test.tsbuildinfo",
+    "tsPlusConfig": "../../tsplus.config.json",
+    "rootDir": "_test"
+  },
+  "include": ["_test/**/*.ts"],
+  "references": [
+    {
+      "path": "./tsconfig.build.json"
+    }
+  ]
 }

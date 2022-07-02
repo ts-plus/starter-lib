@@ -33,6 +33,10 @@
       "import": "./build/esm/*.js"
     }
   },
+  "dependencies": {
+    "@tsplus/runtime": "^0.1.3",
+    "@tsplus/stdlib": "^0.2.2"
+  },
   "config": {
     "side": [],
     "modules": []
